@@ -7,15 +7,6 @@
     "type": "git",
     "url": "https://github.com/ParsePlatform/parse-server"
   },
-  "files": [
-    "bin/",
-    "lib/",
-    "public_html/",
-    "views/",
-    "LICENSE",
-    "PATENTS",
-    "README.md"
-  ],
   "license": "BSD-3-Clause",
   "dependencies": {
     "bcryptjs": "2.3.0",
@@ -41,9 +32,7 @@
     "tv4": "1.2.7",
     "winston": "2.3.0",
     "winston-daily-rotate-file": "1.4.0",
-    "ws": "1.1.1"
-  },
-  "devDependencies": {
+    "ws": "1.1.1",
     "babel-cli": "6.18.0",
     "babel-core": "6.18.2",
     "babel-eslint": "^7.1.1",
@@ -75,7 +64,8 @@
     "coverage": "cross-env COVERAGE_OPTION='./node_modules/.bin/istanbul cover' npm test",
     "coverage:win": "cross-env MONGODB_VERSION=${MONGODB_VERSION:=3.2.6} MONGODB_STORAGE_ENGINE=mmapv1 NODE_ENV=test TESTING=1 node ./node_modules/istanbul/lib/cli.js cover ./node_modules/jasmine/bin/jasmine.js",
     "start": "node ./bin/parse-server",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "postinstall": "npm run build"
   },
   "engines": {
     "node": ">=4.5"
