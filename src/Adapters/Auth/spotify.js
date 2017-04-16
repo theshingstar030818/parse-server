@@ -1,5 +1,4 @@
 // Helper functions for accessing the Spotify API.
-var https = require('https');
 var Parse = require('parse/node').Parse;
 
 // Returns a promise that fulfills iff this user id is valid.
@@ -36,25 +35,12 @@ function validateAppId(appIds, authData) {
 
 // A promisey wrapper for Spotify API requests.
 function request(path, access_token) {
-  return new Promise(function(resolve, reject) {
-    https.get({
-      host: 'api.spotify.com',
-      path: '/v1/' + path,
-      headers: {
-        'Authorization': 'Bearer ' + access_token
-      }
-    }, function(res) {
-      var data = '';
-      res.on('data', function(chunk) {
-        data += chunk;
-      });
-      res.on('end', function() {
-        data = JSON.parse(data);
-        resolve(data);
-      });
-    }).on('error', function() {
-      reject('Failed to validate this access token with Spotify.');
-    });
+  return require('./request')({
+    host: 'api.spotify.com',
+    path: '/v1/' + path,
+    headers: {
+      'Authorization': 'Bearer ' + access_token
+    }
   });
 }
 
