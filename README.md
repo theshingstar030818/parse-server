@@ -3,7 +3,7 @@
   </a>
 </p>
 
-<details align="center">
+<details align="left">
   <summary align="center"><b>Continue</b></summary>
     
 <p align="center">
@@ -46,6 +46,7 @@
   <a href="#sponsors"><img alt="Sponsors on Open Collective" src="https://opencollective.com/parse-server/sponsors/badge.svg" /></a>
 </p>
 <br>
+
 
 Parse Server works with the Express web application framework. It can be added to existing web applications, or run by itself.
 
@@ -748,5 +749,6 @@ Support us with a monthly donation and help us continue our activities. [Become 
 -----
 
 As of April 5, 2017, Parse, LLC has transferred this code to the parse-community organization, and will no longer be contributing to or distributing this code.
+
 
  </details>
