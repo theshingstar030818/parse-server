@@ -1,4 +1,9 @@
 <p align="center">
+    <img alt="Parse Server" src="https://drive.google.com/file/d/1TprgraOlxj2wn-onl7bOAnYAYUfOWRkV/view" width="500">
+  </a>
+</p>
+
+<p align="center">
     <img alt="Parse Server" src="https://github.com/parse-community/parse-server/raw/master/.github/parse-server-logo.png" width="500">
   </a>
 </p>
