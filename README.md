@@ -1,8 +1,11 @@
 <p align="center">
-    <img alt="Parse Server" src="https://drive.google.com/file/d/1TprgraOlxj2wn-onl7bOAnYAYUfOWRkV/view" width="500">
+    <img alt="Parse Server" src="https://github.com/parse-community/parse-server/blob/climate-strike/.github/Banner-600x600-Cool-Down.png" width="500">
   </a>
 </p>
 
+<details align="center">
+  <summary align="center"><b>Continue</b></summary>
+    
 <p align="center">
     <img alt="Parse Server" src="https://github.com/parse-community/parse-server/raw/master/.github/parse-server-logo.png" width="500">
   </a>
@@ -745,3 +748,5 @@ Support us with a monthly donation and help us continue our activities. [Become 
 -----
 
 As of April 5, 2017, Parse, LLC has transferred this code to the parse-community organization, and will no longer be contributing to or distributing this code.
+
+ </details>
